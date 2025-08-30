@@ -21,7 +21,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -92,11 +116,11 @@
 
     <div class="box">
         <h4>💰 Where to Buy</h4>
-        <p><strong>Amazon:</strong> $129 with free shipping<br>
-        <strong>Walmart:</strong> $119 (but often out of stock)<br>
+        <p><strong>Amazon:</strong> $109 with free shipping<br>
+        <strong>Walmart:</strong> $129 (but often out of stock)<br>
         <strong>Best Deal:</strong> Wait for Amazon Prime Day - drops to $99</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Flexispot on Amazon</a></li>
+            <li><a href="https://amzn.to/47Zcph8" class="button primary">Check Flexispot on Amazon</a></li>
         </ul>
     </div>
 
@@ -120,7 +144,7 @@
         <strong>VIVO Direct:</strong> $85 (plus $10 shipping)<br>
         <strong>Best Deal:</strong> Amazon warehouse deals - often $65</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check VIVO on Amazon</a></li>
+            <li><a href="https://amzn.to/3HTlnCb" class="button primary">Check VIVO on Amazon</a></li>
         </ul>
     </div>
 
@@ -143,9 +167,9 @@
     <div class="box">
         <h4>💰 Where to Buy</h4>
         <p><strong>Amazon:</strong> $35 with free shipping<br>
-        <strong>Best Deal:</strong> Often on sale for $29</p>
+        <strong>Best Deal:</strong> Often on sale</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check HUANUO on Amazon</a></li>
+            <li><a href="https://amzn.to/46dZ6bw" class="button primary">Check HUANUO on Amazon</a></li>
         </ul>
     </div>
 

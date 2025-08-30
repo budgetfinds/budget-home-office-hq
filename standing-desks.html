@@ -21,6 +21,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -105,7 +130,7 @@
 
     <h2>Best Desk Converters Under $250</h2>
 
-    <h3>1. VIVO Height Adjustable Standing Desk Converter - $179</h3>
+    <h3>1. VIVO Height Adjustable Standing Desk Converter - $89</h3>
     <p><span class="image left"><img src="images/vivo-converter.jpg" alt="VIVO Standing Desk Converter" /></span></p>
 
     <p>After testing 8 different converters, this VIVO model offers the best combination of stability, size, and ease of adjustment. I've used it daily for 4 months.</p>
@@ -130,11 +155,11 @@
 
     <div class="box">
         <h4>💰 Current Pricing</h4>
-        <p><strong>Amazon:</strong> $179<br>
+        <p><strong>Amazon:</strong> $89<br>
         <strong>VIVO Direct:</strong> $169 + shipping<br>
-        <strong>Best Deal:</strong> Watch for Amazon Prime Day sales ($149)</p>
+        <strong>Best Deal:</strong> Watch for Amazon Prime Day sales</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Amazon Price</a></li>
+            <li><a href="https://amzn.to/4mDnLMi" class="button primary">Check Amazon Price</a></li>
         </ul>
     </div>
 

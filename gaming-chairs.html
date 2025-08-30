@@ -21,6 +21,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -209,15 +234,15 @@
 
    <div class="box">
        <h4>💰 Current Price & Where to Buy</h4>
-       <p><strong>Amazon:</strong> $165 with free shipping<br>
+       <p><strong>Amazon:</strong> $124.99 with free shipping<br>
        <strong>Alera Direct:</strong> $149 + shipping<br>
        <strong>Best Deal:</strong> Office supply store sales (often $135)</p>
        <ul class="actions">
-           <li><a href="#" class="button primary">Check Amazon Price</a></li>
+           <li><a href="https://amzn.to/3USAIFX" class="button primary">Check Amazon Price</a></li>
        </ul>
    </div>
 
-   <h3>Instead of $300 Gaming Chair → Get Steelcase Series 1 ($195)</h3>
+   <h3>Instead of $300 Gaming Chair → Get SIHOO M18 Ergonomic Chair ($179)</h3>
    <p><strong>Why it's better:</strong></p>
    <ul>
        <li>Made by actual ergonomic furniture company</li>
@@ -228,11 +253,11 @@
 
    <div class="box">
        <h4>💰 Current Price & Where to Buy</h4>
-       <p><strong>Steelcase Direct:</strong> $195<br>
-       <strong>Amazon:</strong> $199<br>
-       <strong>Best Deal:</strong> Refurbished from Steelcase ($149)</p>
+       <p><strong>SIHOO Direct:</strong> $179 + shipping<br>
+       <strong>Amazon:</strong> $135.14<br>
+       <strong>Best Deal:</strong> Amazon during sales events</p>
        <ul class="actions">
-           <li><a href="#" class="button primary">Check Steelcase Direct</a></li>
+           <li><a href="https://amzn.to/45Ho0Af" class="button primary">Check Steelcase Direct</a></li>
        </ul>
    </div>
 

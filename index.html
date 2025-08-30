@@ -22,6 +22,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 

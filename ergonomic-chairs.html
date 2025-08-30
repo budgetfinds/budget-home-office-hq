@@ -21,6 +21,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -109,7 +134,7 @@
 
     <h2>Top Ergonomic Chairs Under $300</h2>
 
-    <h3>1. Steelcase Series 1 - $195</h3>
+    <h3>1. Steelcase Series 1 - $477</h3>
     <p><span class="image left"><img src="images/steelcase-series1-detail.jpg" alt="Steelcase Series 1 Ergonomic Features" /></span></p>
 
     <p>This is what happens when a company that makes $1,200 ergonomic chairs creates a "budget" version. Every adjustment feels precise, and the ergonomics are based on decades of workplace research.</p>
@@ -142,11 +167,11 @@
 
     <div class="box">
         <h4>💰 Current Price & Where to Buy</h4>
-        <p><strong>Steelcase Direct:</strong> $195 (best warranty support)<br>
-        <strong>Amazon:</strong> $199<br>
-        <strong>Best Deal:</strong> Steelcase refurbished units ($149, same warranty)</p>
+        <p><strong>Steelcase Direct:</strong> $477 (takes 7 days to ship)<br>
+        <strong>Amazon:</strong> $449 (Free shipping)<br>
+        <strong>Best Deal:</strong> Amazon ($449, warranty & Free shipping)</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Steelcase Direct</a></li>
+            <li><a href="https://amzn.to/3VqgvYd" class="button primary">Check Current Amazon Price</a></li>
         </ul>
     </div>
 

@@ -22,6 +22,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -118,7 +143,7 @@
 
     <h2>Detailed Chair Reviews</h2>
 
-    <h3>1. SIHOO M18 Ergonomic Office Chair - $189</h3>
+    <h3>1. SIHOO M18 Ergonomic Office Chair - $179</h3>
     <p><span class="image left"><img src="images/sihoo-m18.jpg" alt="SIHOO M18 Office Chair" /></span></p>
     
     <p>After 3 months of daily use, the SIHOO M18 remains my top recommendation for budget-conscious buyers who refuse to compromise on comfort. This chair punches way above its weight class.</p>
@@ -144,17 +169,17 @@
 
     <div class="box">
         <h4>💰 Current Price & Where to Buy</h4>
-        <p><strong>Amazon:</strong> $189 with free shipping<br>
-        <strong>Direct from SIHOO:</strong> $179 (but shipping takes 2-3 weeks)<br>
+        <p><strong>Amazon:</strong> $135.14 with free shipping<br>
+        <strong>Direct from SIHOO:</strong> $179 + $20 shipping<br>
         <strong>Best Deal:</strong> Amazon during their monthly furniture sales (usually $159)</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Current Amazon Price</a></li>
+            <li><a href="https://amzn.to/45Ho0Af" class="button primary">Check Current Amazon Price</a></li>
         </ul>
     </div>
 
     <hr class="major" />
 
-    <h3>2. Steelcase Series 1 Office Chair - $195</h3>
+    <h3>2. Steelcase Series 1 Office Chair - $477</h3>
     <p><span class="image right"><img src="images/steelcase-series1.jpg" alt="Steelcase Series 1" /></span></p>
 
     <p>Steelcase makes $1,200 chairs for Fortune 500 companies. The Series 1 is their "budget" entry - and it shows the build quality you'd expect from a premium manufacturer.</p>
@@ -178,11 +203,11 @@
 
     <div class="box">
         <h4>💰 Current Price & Where to Buy</h4>
-        <p><strong>Steelcase Direct:</strong> $195<br>
-        <strong>Amazon:</strong> $199<br>
+        <p><strong>Steelcase Direct:</strong> $477 Takes 7 days to ship<br>
+        <strong>Amazon:</strong> $449 Free shipping<br>
         <strong>Best Deal:</strong> Check Steelcase.com for refurbished units ($149)</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Steelcase Direct</a></li>
+            <li><a href="https://amzn.to/3VqgvYd" class="button primary">Check Current Amazon Price</a></li>
         </ul>
     </div>
 

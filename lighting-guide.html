@@ -21,7 +21,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -83,10 +107,10 @@
 
     <div class="box">
         <h4>💰 Budget Alternative</h4>
-        <p><strong>Amazon Basics LED Bulb - $12 for 4-pack</strong><br>
+        <p><strong>Amazon Basics LED Bulb - $12 for 6-pack</strong><br>
         800 lumens, 5000K daylight, works with any fixture</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Amazon Basics Bulbs</a></li>
+            <li><a href="https://amzn.to/3HTdNaG" class="button primary">Check Amazon Basics Bulbs</a></li>
         </ul>
     </div>
 
@@ -108,10 +132,10 @@
 
     <div class="box">
         <h4>💰 Budget Alternative</h4>
-        <p><strong>TaoTronics LED Desk Lamp - $36</strong><br>
-        5 color modes, touch controls, USB charging port. 85% as good for 1/3 the price.</p>
+        <p><strong>YOUKOYI LED Desk Lamp - $34</strong><br>
+        4 color modes, 5 brightness modes, touch controls, USB charging port. 85% as good for 1/3 the price.</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check TaoTronics Lamp</a></li>
+            <li><a href="https://amzn.to/4p0NMqC" class="button primary">Check TaoTronics Lamp</a></li>
         </ul>
     </div>
 

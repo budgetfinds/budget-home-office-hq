@@ -22,6 +22,31 @@
 
   gtag('config', 'G-8SNPGE9NNE');
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-signup');
+    
+    if (emailForm) {
+        // Add Netlify form attributes
+        emailForm.setAttribute('netlify', '');
+        emailForm.setAttribute('name', 'email-signup');
+        emailForm.removeAttribute('action');
+        
+        // Add hidden input for Netlify
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = 'form-name';
+        hiddenInput.value = 'email-signup';
+        emailForm.appendChild(hiddenInput);
+        
+        // Add success message handling
+        emailForm.addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            // Form will redirect to a thank you page automatically
+        });
+    }
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -82,14 +107,14 @@
     <h3>Option 1: Wall-Mounted Desks</h3>
     <p><span class="image left"><img src="images/wall-desk.jpg" alt="Wall Mounted Desk" /></span></p>
 
-    <p><strong>Top Pick: Prepac Wall Mounted Desk - $120</strong></p>
+    <p><strong>Top Pick: Tangkula Wall Mounted Desk - $120</strong></p>
     <p>Folds completely flat against the wall when not in use. Holds up to 50 lbs, includes cable management, and installs in about 45 minutes.</p>
 
     <p><strong>Specs:</strong></p>
     <ul>
-        <li>Open: 42" wide × 20" deep</li>
-        <li>Closed: 4.5" deep (folds flat)</li>
-        <li>Weight capacity: 50 lbs</li>
+        <li>Item dimension 23.5" x 37.5" x 59.5"</li>
+        <li>6.5 inches deep</li>
+        <li>Weight capacity: 44 lbs</li>
         <li>Material: Engineered wood with laminate finish</li>
     </ul>
 
@@ -99,7 +124,7 @@
         <strong>Home Depot:</strong> $115 (store pickup)<br>
         <strong>Best Deal:</strong> Sometimes available refurbished for $89</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Prepac on Amazon</a></li>
+            <li><a href="https://amzn.to/3HAcGg3" class="button primary">Check Prepac on Amazon</a></li>
         </ul>
     </div>
 
@@ -141,9 +166,9 @@
         <h4>💰 Where to Buy</h4>
         <p><strong>Amazon:</strong> $85 with free shipping<br>
         <strong>Walmart:</strong> $79 (store pickup)<br>
-        <strong>Best Deal:</strong> Buy 2 for $150 sometimes available</p>
+        <strong>Best Deal:</strong> Amazon on Sale now for $67.04</p>
         <ul class="actions">
-            <li><a href="#" class="button primary">Check Flash Furniture on Amazon</a></li>
+            <li><a href="https://amzn.to/3HAcSMj" class="button primary">Check Flash Furniture on Amazon</a></li>
         </ul>
     </div>
 
